@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h2,
+h3 {
+    font-family: "Raleway";
+    font-weight: 700;
+}
+
+p {
+    font-size: 16px;
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 90px;
+}
+
+.fylo-logo svg {
+    height: 49px;
+    width: 166px;
+}
+
+.features {
+    display: flex;
+    align-items: center;
+}
+
+.features ul {
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: hsl(238, 22%, 44%);
+    font-family: "Raleway";
+    font-weight: 400;
+}
+
+.first-grid-wrapper,
+.second-grid-wrapper,
+.third-grid-wrapper,
+.forth-grid-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 90px;
+}
+
+.first-grid-wrapper {
+    padding-bottom: 100px;
+    background-color: white;
+}
+
+.first-grid,
+.second-grid,
+.third-grid,
+.forth-grid {
+    width: 100%;
+}
+
+.first-grid {
+    align-self: center;
+}
+
+.first-grid h2 {
+    width: 60%;
+    color: hsl(243, 87%, 12%);
+    padding: 0 0 15px;
+    line-height: 35px;
+}
+
+.first-grid p {
+    width: 75%;
+    color: hsl(243, 87%, 12%);
+    padding-bottom: 20px;
+}
+
+.simple-input {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.second-grid img,
+.forth-grid img {
+    margin-left: 10px;
+    height: 350px;
+    width: 98%;
+}
+
+input[type=email] {
+    height: 35px;
+    width: 39%;
+    padding-left: 10px;
+    transition: 0.5s;
+    border: 1px solid black;
+    outline: none;
+}
+
+input[type=email]:focus {
+    border: 1px solid rgb(196, 122, 122);
+}
+
+button[type=reset] {
+    cursor: pointer;
+    height: 35px;
+    width: 30%;
+    color: white;
+    background-color: hsl(224, 93%, 58%);
+    border: none;
+    font-family: "Raleway";
+    font-weight: 400;
+}
+
+.second-grid-wrapper {
+    background: url(./images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    padding: 0px 90px;
+    padding-top: 150px;
+    padding-bottom: 90px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.third-grid {
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.third-grid h2,
+.third-grid p {
+    color: hsl(243, 87%, 12%);
+    padding-bottom: 20px;
+}
+
+.third-grid p {
+    width: 67%;
+    padding-bottom: 15px;
+}
+
+.fake-link p {
+    color: hsl(170, 45%, 43%) !important;
+    width: 35% !important;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    cursor: pointer;
+    padding-bottom: 35px !important;
+}
+
+p>img {
+    transform: translate(0, 5px);
+}
+
+.comment-box {
+    height: 250px;
+    width: 55%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px;
+}
+
+.comment-box img {
+    transform: translate(25px, 29px);
+}
+
+.comment-box p {
+    transform: translate(25px, 35px);
+    width: 90%;
+    padding-bottom: 25px;
+}
+
+img[src='./images/avatar-testimonial.jpg'] {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+}
+
+.info-div {
+    display: flex;
+}
+
+.info-div span {
+    transform: translate(5px);
+}
+
+.info-div span :nth-child(1) {
+    font-weight: bold;
+    display: inline-flex;
+    padding: 0;
+}
+
+.info-div span :nth-child(2) {
+    width: 100%;
+    font-size: 10px;
+}
+
+.third-grid-wrapper {
+    height: 240px;
+    background-color: hsl(238, 22%, 44%);
+    align-items: center;
+    padding-top: 50px;
+}
+
+.fifth-grid h3 {
+    color: white;
+    padding-bottom: 15px;
+}
+
+.fifth-grid p {
+    color: white;
+    font-size: 14px;
+    width: 65%;
+}
+
+.simple-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 150px;
+}
+
+.sixth-grid input[type=email] {
+    height: 35px;
+    width: 100%;
+}
+
+button[type=submit] {
+    cursor: pointer;
+    height: 35px;
+    width: 50%;
+    color: white;
+    background-color: hsl(224, 93%, 58%);
+    border: none;
+    font-family: "Raleway";
+    font-weight: 400;
+}
+
+footer {
+    height: 300px;
+    background-color: hsl(243, 87%, 12%);
+    padding: 50px 90px;
+}
+
+.info-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.seventh-grid svg {
+    fill: white;
+    height: 49px;
+    width: 167px;
+    margin-bottom: 20px;
+}
+
+.phone,
+.email {
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.calls,
+.message {
+    height: 15px;
+    padding-right: 20px;
+    margin-top: 3px;
+}
+
+.phone>p,
+.email>p {
+    color: white;
+    font-weight: 400;
+}
+
+.eigth-grid {
+    width: 99%;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 80px;
+}
+
+.ninth-grid {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tenth-grid {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ninth-grid>p,
+.tenth-grid>p {
+    width: 90px;
+}
+
+.ninth-grid>p:hover,
+.tenth-grid>p:hover {
+    cursor: pointer;
+    color: hsl(238, 22%, 44%);
+}
+
+.eleventh-grid {
+    /* width: %; */
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 50px; */
+    /* border: 1px solid black; */
+}
+
+.social {
+    display: flex;
+    gap: 13px;
+}
+
+.facebook,
+.twitter,
+.instagram {
+    height: 37px;
+    width: 37px;
+    display: flex;
+    border-radius: 50px;
+    border: 2px solid white;
+}
+
+.facebook:hover,
+.twitter:hover,
+.instagram:hover {
+    border-color: hsl(238, 22%, 44%);
+    cursor: pointer;
+}
+
+.fa-brands {
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.fa-brands:hover {
+    color: hsl(238, 22%, 44%);
+    cursor: pointer;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width:1000px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 0;
+    }
+
+    .features ul {
+        gap: 15px;
+        margin: 0 10px 0;
+    }
+
+    .fylo-logo svg {
+        margin: 0 2px 0;
+    }
+
+    .first-grid-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 50px 2px 90px;
+    }
+
+    .first-grid h2 {
+        width: 79%;
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+
+    .first-grid p {
+        width: 85%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .simple-input {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input[type=email] {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    button[type=reset] {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .second-grid img {
+        width: 97.5%;
+    }
+
+    .second-grid-wrapper {
+        padding: 70px 2px 0px;
+        display: flex;
+        background-image: none;
+        background: url(./images/bg-curve-mobile.svg);
+        background-repeat: no-repeat;
+        flex-direction: column-reverse;
+    }
+
+    .third-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .third-grid h2 {
+        font-size: 20px;
+    }
+
+    .third-grid p {
+        margin: 0 auto;
+        width: 89%;
+    }
+
+    .fake-link p {
+        padding-top: 20px;
+        width: 100% !important;
+    }
+
+    .comment-box {
+        width: 89%;
+    }
+
+    .comment-box p {
+        transform: translate(5px, 35px);
+        width: 85%;
+        font-size: 14px;
+    }
+
+    .info-div span {
+        transform: translate(25px);
+    }
+
+    .forth-grid img {
+        padding-bottom: 90px;
+    }
+
+    .third-grid-wrapper {
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        padding: 50px 2px 90px;
+    }
+
+    .fifth-grid h3 {
+        width: 79%;
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+
+    .fifth-grid p {
+        width: 69%;
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+
+    .simple-form {
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sixth-grid input[type=email] {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    button[type=submit] {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    footer {
+        width: 100%;
+        height: 700px;
+    }
+
+    .info-section {
+        width: 100%;
+        display: block;
+        transform: translate(-70px);
+    }
+
+    .seventh-grid svg {
+        margin-bottom: 30px;
+    }
+    
+    .eigth-grid {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        column-gap: 0;
+        padding-top: 20px;
+        padding-right: 30px;
+    }
+
+    .tenth-grid {
+        margin-top: 49px;
+    }
+
+    .eleventh-grid {
+        margin-top: 90px;
+        transform: translate(60px);
+    }
+}
